@@ -35,3 +35,4 @@ var resultat = direBonjour();
 
 // 3°) b) Donner l'ordre d'afficher le contenu de la variable resultat dans la console
 
+//test
