@@ -20,9 +20,14 @@
 
 // Fonction anonyme avec la syntaxe "fat arrow function"
 
+const salue = (prenom)=>{
+    return 'Bonjour, ' + prenom + ' !';
+}
+
+
 // Utilisation de la fonction pour saluer Thomas dans la console
 
-
+console.log(salue("Thomas"));
 
 /*
 N.B. Dans certains cas particuliers, on peut simplifier la syntaxe des fonctions fléchées :
@@ -39,6 +44,9 @@ N.B. Dans certains cas particuliers, on peut simplifier la syntaxe des fonctions
 
 // Fonction anonyme avec la syntaxe simplifiée
 
+const salut = (prenom)=>  'Bonjour, ' + prenom + ' !';
+
 
 // Utilisation de la fonction pour saluer Thomas dans la console
 
+console.log(salut("Thomas"));
