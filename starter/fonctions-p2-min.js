@@ -13,10 +13,18 @@ N.B. Faites deux versions :
 */
 
 // Syntaxe classique
-
+function calcMin( nombre1, nombre2){
+    if (nombre1<nombre2){
+        return nombre1;
+    }
+    return nombre2;
+}
 
 // Utilisation de la fonction calcMin pour calculer le minimum
 
+console.log(calcMin(4.5, 5));
+console.log(calcMin(19,9));
+console.log(calcMin(1,1));
 
 // Version avec une arrow function
 
