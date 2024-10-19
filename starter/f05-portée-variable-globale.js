@@ -60,6 +60,9 @@ affiche2();
 // 5°) Expliquer ce qui se passe
 
 
+
+
+/*
 const nbre1= 2;
 
 function affiche1(){
@@ -73,6 +76,8 @@ function affiche2() {
 }
 affiche1();
 affiche2();
+*/
+
 
 
 
@@ -89,7 +94,25 @@ affiche2();
 // 4°) Appeler affiche1 et affiche2
 // 5°) Expliquer ce qui se passe
 
+let nbre1;
 
+function affiche1(){
+    nbre1= 2;
+    console.log(`Dans affiche1 : nbre1 = ${nbre1} `);
+}
+
+function affiche2() {
+    const nbre2= 3;
+    console.log(`Dans affiche2 : nbre2 = ${nbre2} `);
+    console.log(`Dans affiche2 : nbre1 = ${nbre1} `);
+}
+affiche1();
+affiche2();
+
+// on ne peut pas déclarer la variable hors de la fonction avec const.
+//faut utiliser  let
+// on peut utiliser nre1 dans les 2 fonctions car elle a été déclaré hors les fonctions.
+// on reprend dans affiche2 la valeur de affiche1 pour nbre1
 
 
 
