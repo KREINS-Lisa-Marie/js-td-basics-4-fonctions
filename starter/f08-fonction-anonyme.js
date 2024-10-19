@@ -20,15 +20,15 @@
 
 
 
-/*
-function direBonjour() {
+
+const direBonjour=function() {
     console.log("Bonjour !");
 }
 
 // Appel de la fonction
 
 direBonjour();
-*/
+
 
 
 
@@ -48,15 +48,15 @@ direBonjour();
 
 
 
-/*
-function disBonjour() {
+
+const disBonjour= function () {
     return console.log("Bonjour !");
 }
 
 // Utilisation de la fonction pour afficher "Bonjour !" dans la console
 
 disBonjour();
-*/
+
 
 
 
@@ -74,7 +74,7 @@ disBonjour();
 
 // Expression de fonction avec paramètre et return
 
-function salue (prenom){
+const salue= function (prenom){
     let message=`Bonjour ${prenom} !`;
     return message;
 }
