@@ -9,7 +9,16 @@
 /* EXERCICE 1 : Plusieurs fonctions sans paramètre
 1. a) Déclarez une fonction appelée double3 qui affiche dans la console 'Le double de 3 est  '.
    b) Appelez cette fonction.
+*/
 
+
+function double3(){
+    let resultat = 3*2;
+    console.log(`Le double de 3 est ${resultat}.`);
+}
+double3();
+
+/*
 // Imaginons à présent qu'on a besoin de calculer le double d'autres nombres 
 // On a besoin de déclarer une fonction pour calculer le double de 10
 // et puis de déclarer une AUTRE fonction pour calculer le double de 24
@@ -36,3 +45,13 @@
                      - le double de 24 ;
                      - le double de 128.
 */
+
+
+function double(nombre) {
+    let resultat= nombre*2;
+    console.log(`Le double de ${nombre} est ${resultat} `);
+}
+double(3);
+double(10);
+double(24);
+double(128);
