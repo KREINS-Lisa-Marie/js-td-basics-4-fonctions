@@ -28,13 +28,10 @@ Utiliser la fonction Math.random pour afficher dans la console
 - un nombre aléatoire compris entre 5 (inclus) et 15 (exclu)
 */
 
-// HELP !!!!!
-
 
 console.log(Math.random()); // Un nombre aléatoire entre 0 et 1
-console.log(Math.random(-1, 1));
-console.log(Math.random(-1, 10));
-console.log(Math.random(4, 15));
+console.log(Math.random() * (10-0));// Un nombre aléatoire entre 0 et 10
+console.log(Math.random() * (15-4)+4);// Un nombre aléatoire entre 4 et 15
 
 // Nous découvrirons plein d'autres fonctions prédéfinies dans la suite de ce cours.
 
