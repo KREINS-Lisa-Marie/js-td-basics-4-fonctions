@@ -13,6 +13,7 @@ N.B. Faites deux versions :
 */
 
 // Syntaxe classique
+
 function calcMin( nombre1, nombre2){
     if (nombre1<nombre2){
         return nombre1;
@@ -28,11 +29,21 @@ console.log(calcMin(1,1));
 
 // Version avec une arrow function
 
+const calcMinArrow = (nombre1, nombre2)=>{ if (nombre1<nombre2){ return nombre1;}return nombre2;}
+
 // Utilisation de la fonction calcMinArrow pour calculer le minimum
 
+console.log(calcMinArrow(4.5, 5));
+console.log(calcMinArrow(19,9));
+console.log(calcMinArrow(1,1));
 
 // Version encore plus concise avec une arrow function
+//const calcMinConcise = (a, b) => (a < b) ? a : b;
+
 const calcMinConcise = (a, b) => (a < b) ? a : b;
 
 // Utilisation de la fonction calcMinConcise pour calculer le minimum
 
+console.log(calcMinConcise(4.5, 5));
+console.log(calcMinConcise(19,9));
+console.log(calcMinConcise(1,1));
