@@ -49,7 +49,7 @@ console.log(`Jane a ${calculateAge(1969)} ans.`);
 
 
 function giveYearsUntilRetirement(year,firstName) {
-    age = calculateAge(year);
+    const age = calculateAge(year);
     const retirement= 65-age;
     if (retirement>0){
         return `${firstName} prendra sa pension dans ${retirement} ans.`;

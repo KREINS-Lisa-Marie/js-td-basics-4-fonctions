@@ -10,7 +10,7 @@
     */
 
     // Fonction pour vérifier si une année est bissextile
-
+/*
     const day = parseInt(prompt("Entrez une date sous forme de jour"));
     const month= parseInt(prompt("Entrez une date sous forme de mois"));
     const year= parseInt(prompt("Entrez une date sous forme d'année"));
@@ -72,7 +72,7 @@
         }
     }
     console.log(isValid(29,2,2024));
-
+*/
 
     // Fonction pour vérifier si une date est valide
     /*
@@ -309,3 +309,62 @@
     }
     */
 
+
+
+
+
+    function isBissextile(year) {
+        if (year%4 === 0 && year %100 !== 0){
+            return true;
+        } else if (year%400 === 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    //console.log(isBissextile(2019));
+
+    function isValid(day, month, year) {
+        let Maxdays = 0;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                maxDays = 31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                maxDays = 30;
+                break;
+            case 2:
+                if (isBissextile(year) === true) {
+                    maxDays = 29;
+                    return true;        // année bissextile
+                } else {
+                    Maxdays = 28;
+                    return false;
+                }
+
+        }
+        if (day && month && year) {         // if (day) si day vaut un nombre alors = true si NaN alors c'est false
+            if (day > 0 && month > 0 && year > 0) {
+                if (month >= 1 && month <= 12) {
+                    if (day <= maxDays) {
+                        console.log(`La date ${day}--${month}--${year} est valide`);
+                        return true;
+                    }
+                    return false;
+                }
+                return false;
+            }
+            return false;
+        }
+        return false;
+    }
+    console.log(isValid(29,2,2024));

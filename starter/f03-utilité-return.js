@@ -47,6 +47,6 @@ function calcule2(){
 // 3°) Appelez les fonctions calcule1() et calcule2() pour exécuter les calculs et afficher les résultats dans la console
 
 
-calcule1();
-calcule2();
+//calcule1();
+//calcule2();
 console.log(calcule1(), calcule2());
