@@ -310,7 +310,7 @@
     */
 
 
-
+/*
 
 
     function isBissextile(year) {
@@ -368,3 +368,71 @@
         return false;
     }
     console.log(isValid(29,2,2024));
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+//      -----MA SOLUTION --------
+
+
+
+    function isBissextile(year) {
+    if (year%400===0 &year%100!==0){
+        return true;
+    }else if (year%4===0){
+        return true;
+    }
+    return false;
+    }
+    console.log(isBissextile(2023))
+
+    function isValid(day, month, year) {
+        let Maxdays;
+        switch (month){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                maxDays = 31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                maxDays = 30;
+                break;
+            case 2:
+                if (isBissextile(year)=== true){
+                    maxDays = 29;
+                }else {
+                    maxDays = 28;
+                }
+        }
+        if (day && month && year){
+            if (day>0 && month>0 && year>0){
+                if (month>0 && month<=12){
+                    if (day>0 && day<=maxDays){
+                        return true
+                    }
+                    return false;
+                }
+                return false;
+            }
+            return false;
+        }
+        return false;
+    }
+    console.log(isValid(29, 2, 2023));
